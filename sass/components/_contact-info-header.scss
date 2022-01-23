@@ -1,0 +1,81 @@
+.container-contact {
+  margin-left: auto;
+  margin-top: 32px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact-info__link {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-info__mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.contact-info__phone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.contact-info__mail-icon {
+  fill: $text-color;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.contact-info__phone-icon {
+  fill: $text-color;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.contact-info__link:hover .contact-info__mail-icon {
+  fill: $accent-color;
+}
+
+.contact-info__link:focus .contact-info__mail-icon {
+  fill: $accent-color;
+}
+
+.contact-info__link:hover .contact-info__phone-icon {
+  fill: $accent-color;
+}
+
+.contact-info__link:focus .contact-info__phone-icon {
+  fill: $accent-color;
+}
