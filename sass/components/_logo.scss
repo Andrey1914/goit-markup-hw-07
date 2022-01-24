@@ -12,11 +12,11 @@
   transition: color 250ms $timing-function;
 
   &:hover,
-  &:hover {
+  &:focus {
     color: $accent-color;
   }
-}
 
-.logo__text {
-  color: $accent-color;
+  &__text {
+    color: $accent-color;
+  }
 }

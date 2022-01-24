@@ -12,17 +12,17 @@
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/img-6.jpg');
-}
 
-.hero__title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-of-headers-secondary;
+  &__title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-of-headers-secondary;
+  }
 }
