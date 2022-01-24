@@ -423,6 +423,7 @@ a {
 .form__textarea {
   height: 120px;
   padding: 12px 16px;
+  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -441,10 +442,6 @@ a {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea {
-  resize: none;
 }
 
 .form__checkbox {
@@ -487,7 +484,7 @@ a {
 
 .form__label--text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
@@ -500,13 +497,17 @@ a {
 
 .experience {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-basis: calc(100% / 4);
 }
 
 .experience__item {
+  margin-right: 30px;
   width: 270px;
+}
+
+.experience__item:last-child {
+  margin-right: 0;
 }
 
 .experience__background-icon {
@@ -526,7 +527,7 @@ a {
 }
 
 .experience__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -558,6 +559,12 @@ a {
 
 .activity__item--first {
   margin-left: 0;
+}
+
+.activity__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .activity__title {
