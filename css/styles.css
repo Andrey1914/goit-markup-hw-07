@@ -103,12 +103,16 @@ a {
 
 .site-nav {
   display: flex;
-  justify-content: space-between;
 }
 
 .site-nav__item {
   position: relative;
   height: 48px;
+  margin-right: 50px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
 }
 
 .site-nav__navigation {
@@ -404,7 +408,7 @@ a {
 .form__label {
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text-color);
   cursor: pointer;
@@ -554,11 +558,12 @@ a {
 }
 
 .activity__item {
-  margin-left: 30px;
+  position: relative;
+  margin-right: 30px;
 }
 
-.activity__item--first {
-  margin-left: 0;
+.activity__item:last-child {
+  margin-right: 0;
 }
 
 .activity__image {
@@ -568,20 +573,13 @@ a {
 }
 
 .activity__title {
-  margin-bottom: 50px;
-}
-
-.activity__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-of-headers);
   text-align: center;
-}
-
-.activity__item {
-  position: relative;
+  margin-bottom: 50px;
 }
 
 .activity__box {
@@ -597,9 +595,9 @@ a {
 }
 
 .activity__text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-of-headers-secondary);
@@ -625,11 +623,11 @@ a {
 }
 
 .team__item {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.team__item--first {
-  margin-left: 0;
+.team__item:last-child {
+  margin-right: 0;
 }
 
 .team__info {
@@ -664,7 +662,6 @@ a {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
   width: 206px;
   height: 44px;
   margin-left: auto;
@@ -674,8 +671,13 @@ a {
 .social-links__item {
   display: flex;
   justify-content: center;
+  margin-right: 10px;
   width: 44px;
   height: 44px;
+}
+
+.social-links__item:last-child {
+  margin-right: 0;
 }
 
 .social-links__link {
@@ -711,6 +713,11 @@ a {
 
 /* clients */
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .clients__title {
   text-align: center;
   margin-bottom: 50px;
@@ -721,11 +728,11 @@ a {
 }
 
 .clients__item {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.clients__item--first {
-  margin-left: 0;
+.clients__item:last-child {
+  margin-right: 0;
 }
 
 .clients__link {
