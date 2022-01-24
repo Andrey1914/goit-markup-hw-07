@@ -1,0 +1,46 @@
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 4);
+}
+
+.experience__item {
+  margin-right: 30px;
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.experience__background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $icon-bg-color;
+  border-radius: 4px;
+}
+
+.experience__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.experience__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $color-of-headers;
+  margin-bottom: 10px;
+}
+
+.experience__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
