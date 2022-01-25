@@ -1,8 +1,16 @@
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: $icon-bg-color;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+.our-team {
+  background: $icon-bg-color;
+}
+
+.team {
   &__title {
     font-family: $primary-font;
     font-weight: 700;

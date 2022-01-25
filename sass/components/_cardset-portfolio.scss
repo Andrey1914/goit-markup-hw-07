@@ -43,7 +43,7 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(101%);
-    transition: transform 250ms timing-function;
+    transition: transform 250ms $timing-function;
   }
 
   &__thumb-text {
@@ -51,8 +51,10 @@
     top: 63px;
     left: 24px;
     right: 24px;
+
+    font-family: $primary-font;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
     letter-spacing: 0.03em;
     color: $color-of-headers-secondary;
     transition: color 250ms $timing-function;
@@ -65,7 +67,8 @@
   }
 
   &__title {
-    font-weight: bold;
+    font-family: $primary-font;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -73,6 +76,7 @@
   }
 
   &__text {
+    font-family: $primary-font;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;

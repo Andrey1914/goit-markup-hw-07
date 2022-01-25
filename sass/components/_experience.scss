@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 4);
+  list-style: none;
+  padding: 0;
 
   &__item {
     margin-right: 30px;
@@ -29,6 +31,7 @@
   }
 
   &__title {
+    font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -38,6 +41,7 @@
   }
 
   &__text {
+    font-family: $primary-font;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;

@@ -1,7 +1,4 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   &__title {
     text-align: center;
     margin-bottom: 50px;
@@ -36,22 +33,22 @@
     &:focus {
       border: 1px solid $accent-color;
     }
-  }
 
-  &__label {
-    fill: #afb1b8;
-    width: 106px;
-    height: 60px;
-    transition: fill 250ms $timing-function;
+    .clients__label {
+      fill: #afb1b8;
+      width: 106px;
+      height: 60px;
+      transition: fill 250ms $timing-function;
 
-    &:hover,
-    &:focus {
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+      }
+    }
+
+    &:hover .clients__label,
+    &:focus .clients__label {
       fill: $accent-color;
     }
-  }
-
-  &:hover .clients__label,
-  &:focus .clients__label {
-    fill: $accent-color;
   }
 }
