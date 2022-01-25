@@ -41,10 +41,27 @@
     }
   }
 
+  &__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    &:hover .social-links__icon--footer {
+      fill: #ffffff;
+    }
+  }
+
   &__icon {
     width: 20px;
     height: 20px;
     fill: #afb1b8;
     transition: fill 250ms $timing-function;
+  }
+
+  &__icon--footer {
+    fill: #ffffff;
   }
 }
