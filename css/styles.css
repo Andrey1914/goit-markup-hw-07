@@ -605,7 +605,7 @@ a {
 
 /* our team */
 
-.team {
+.our-team {
   background: var(--icon-bg-color);
 }
 .team__title {
@@ -713,11 +713,6 @@ a {
 
 /* clients */
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .clients__title {
   text-align: center;
   margin-bottom: 50px;
@@ -749,16 +744,16 @@ a {
   transition: border 250ms var(--timing-function);
 }
 
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .clients__label {
   fill: #afb1b8;
   width: 106px;
   height: 60px;
   transition: fill 250ms var(--timing-function);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .clients__label:hover,
@@ -803,7 +798,7 @@ a {
   margin-bottom: 9px;
 }
 
-.footer__contact-item--last {
+.footer__contact-item:last-child {
   margin-bottom: 0;
 }
 
